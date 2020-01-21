@@ -1,0 +1,84 @@
+:root {
+    --darkblue: #04233F;
+    --lightblue: #50C8E9;
+    --pink: #D9487D;
+    --orange: #F29979;
+    --yellow : #F2D680;
+
+    --primary-light: var
+    --primary-:
+    --primary-dark:
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: black;
+}
+
+.bigbox {
+    width: 88%;
+    height: 80%;
+    background-color: blue;
+    position: absolute;
+    z-index: 10;
+    left: 50%;
+    top: 50%;
+    transform:translate(-50%, -50%)
+}
+
+.smallbox {
+    width: 28%;
+    height: 55%;
+    background-color:orange;
+    position: absolute;
+    z-index: 20;
+    left: 34%;
+    top: 50%;
+    transform:translate(-50%, -50%)
+}
+
+.smallbox_behind {
+    width: 28%;
+    height: 55%;
+    background-color:white;
+    position: absolute;
+    z-index: 18;
+    left: 32.5%;
+    top: 53%;
+    transform:translate(-50%, -50%)
+}
+
+.mediumbox {
+    width: 27%;
+    height: 80%;
+    background-color: pink;
+    position: absolute;
+    z-index: 15;
+    left: 19.6%;
+    top: 50%;
+    transform:translate(-50%, -50%)
+}
+
+.bio{
+    position: absolute;
+    top: 100%;
+}
+
+#biography p{
+    color: green;
+    background-color: white;
+    position: absolute;
+    left: 50%;
+}
+
+
+
+
