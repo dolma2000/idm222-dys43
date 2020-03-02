@@ -1,0 +1,392 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: Didot;
+  overflow-x: hidden;
+}
+
+/* ----------MENU CODING---------- */
+
+
+/* ----Page List---- */
+
+.title {
+  font-size: 2.7em;
+  text-align: center;
+  padding-top: 3em;
+  color: #504844;
+}
+.title p {
+  margin-top: 1em;
+}
+
+.subtitle {
+    font-size: 1.24em;
+    text-align: center;
+    color: #504844;
+    padding-bottom: 1em;
+    padding-top: 1.7em;
+}
+
+.subtitle hr{
+    width: 3.2em;
+    border: 3px solid #FBEDE8;
+    margin: 0.4em auto;
+
+}
+
+.wrapContainer {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  clip: rect(0px, 921px, 414px, 0px);
+}
+
+.full-circle {
+  margin-top: 4.4em;
+  width: 100%;
+  height: 50%;
+  overflow-x: hidden; 
+  overflow-y: hidden;
+}
+
+.full-circle img {
+  width: 700px; 
+  animation: rotation 27s infinite;
+  transform-origin: center center;
+  position: relative;
+  left: 0%;
+}
+@keyframes rotation{
+    0% {transform: rotate(-30deg);}
+    14.8% { transform: rotate(-30deg);}
+    16.7% { transform: rotate(30deg);}
+    31.5% { transform: rotate(30deg);}
+    33.3% { transform: rotate(90deg);}
+    48.1% { transform: rotate(90deg);}
+    50% { transform: rotate(150deg);}
+    64.8% {transform: rotate(150deg);}
+    66.7% { transform: rotate(210deg);}
+    81.5% { transform: rotate(210deg);}
+    82.2% { transform: rotate(270deg);}
+    98.14% { transform: rotate(270deg);}
+    100% { transform: rotate(330deg);}
+  }
+
+.bigwheel {
+  display: none;
+}
+
+ /* _________GRID_________ */
+.item1 { 
+  grid-area: subH;
+  display: flex;
+  font-size: 3.5em;
+  align-items: center;
+  justify-content: start;
+  overflow: visible;
+} 
+
+.item2 { 
+  grid-area: para1;
+  display: flex;
+  align-items: center;
+  padding-right: 6px;
+  font-size: 1em;
+}
+.item3 { 
+  grid-area: img;
+  overflow: visible;
+  align-self: end;
+  padding-bottom: 0em;
+} 
+.item3 img {
+  max-width: 100%;
+  max-height: 300px;
+}
+.bio_desktop {
+  display: none;
+}
+.grid-container {
+  position: relative;
+  overflow: visible;
+  z-index: 10;
+  margin: 0em 2.7em 0em 2.7em;
+  width: 100%;
+  display: grid;
+  grid-template-columns:  35% 45.4% ;
+  grid-template-rows: 100px 142px;
+  grid-template-areas: 
+    "subH    img"
+    "para1   img";
+}
+.brownbg {
+  grid-area: bg;
+  width: 100%;
+  height: 152px;
+  background-color: #F1EAE5;
+}
+.behind-grid {
+  position: relative;
+  margin-top: 18em;
+  top: 242px;
+  z-index: 0;
+  display: grid;
+  grid-template-columns:  auto ;
+  grid-template-rows: 100px 142px;
+  grid-template-areas: 
+    ".    "
+    "bg";
+}
+.bio_long {
+    margin: 1.5em 2.7em 5em;
+    line-height: 170%;
+    color: #504844;
+    font-size: 1.1em;
+  }
+
+.skills {
+    width: 100%;
+    height: auto;
+    background: linear-gradient(to top left, #2F1C10 0%, #5F524B 100%);
+    margin-top: 8em;
+}
+
+.skills p {
+    text-align: center;
+    font-size: 1.6em;
+    color: white;
+    padding-top: 1.2em;
+    padding-bottom: 1.2em;
+}
+.logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0em 1.5em 1.7em 1.5em;
+}
+.skills img {
+    width: 4.8em;
+    margin: 0.6em 0.6em 1.3em 0.6em;
+    height: 4.8em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 40px 0 rgba(0, 0, 0, 0.19);
+  }
+.work p {
+    font-size: 2em;
+    text-align: center;
+    margin: 2.8em 0 2em 0;
+}
+.art {
+  text-align: center;
+  margin: 1.45em 0.3em 1.45em;
+  position: relative;
+}
+.art p {
+  text-transform: capitalize;
+  font-size: 1.5em;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.art img {
+  border-radius: 10px;
+}
+.footer {
+  width: 100%;
+  height: 30em;
+  background: #FBEDE8;
+  margin-top: 8em;
+}
+
+
+/* TABLET VERSION */
+@media (min-width: 37.5em){
+
+.title {
+  padding-top: 5em;
+  font-size: 3em;
+}
+.nav-active {
+  transform: translateX(0%);
+  box-shadow: 0px 0px 10px rgb(219, 213, 213);
+}
+.behind-grid {
+  margin-top: 30em;
+}
+.wrapContainer {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  clip: rect(0px, 921px, 445px, 0px);
+}
+.full-circle {
+  margin-top: 6em;
+}
+.full-circle img {
+  width: 750px;
+}
+.item1 {
+  font-size: 5em;
+  display: block;
+  padding-top: 0.5em;
+  padding-left: 0.5em;
+}
+.item2 {
+  font-size: 1.4em;
+  padding-right: 0;
+  padding-left: 2em;
+  padding-top: 2em;
+}
+.item2 {
+  line-height: 1.3em;
+}
+.item3 {
+  justify-self: center;
+}
+.item3 img{
+  max-height: 500px;
+}
+
+.grid-container {
+  grid-template-rows: 100px 300px;
+}
+.brownbg {
+  height: 250px;
+  align-self: flex-end;
+}
+.behind-grid {
+  margin-top: 16em;
+  grid-template-rows: 100px 300px;
+  top: 400px;
+}
+.bio_long {
+  margin: 2em 4.5em 5em;
+}
+
+.art {
+  text-align: center;
+  margin: 1.45em 4em 1.45em;
+  position: relative;
+}
+.art img {
+  border-radius: 16px;
+  margin: 1em 0 1em;
+}
+.skills {
+  margin-top: 10em;
+  padding-bottom: 2em;
+  padding-top: 1em;
+}
+}
+  
+/* DESKTOP VERSION */
+@media (min-width: 62.5em) {
+
+.title {
+  text-align: start;
+  font-size: 8em;
+  padding-top: 0;
+  margin-left: 140px;
+  line-height: 1.3em;
+}
+.subtitle {
+  font-size: 2.2em;
+  padding-top: 0.4em;
+  text-align: start;
+  margin-left: 150px;
+}
+.subtitle hr {
+  width: 5em;
+  border: 6px solid #FBEDE8;
+  margin: 1em 0;
+}
+.wrapContainer {
+  display: none;
+}
+.bigwheel {
+  display: block;
+  
+}
+.full-big-circle img{
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  top:-90%;
+  transform: translateY(-50%);
+  animation: rotation 20s infinite;
+}
+
+@keyframes rotation {
+  0% { transform: rotate(-0deg);}
+  18.2% { transform: rotate(0deg);}
+  20.5% { transform: rotate(-72deg);}
+  38.6% { transform: rotate(-72deg);}
+  40.9% { transform: rotate(-144deg);}
+  59.1% { transform: rotate(-144deg);}
+  61.4% { transform: rotate(-216deg);}
+  79.5% { transform: rotate(-216deg);}
+  81.8% { transform: rotate(-288deg);}
+  100% { transform: rotate(-288deg);}
+}
+
+.bio_long {
+  display: none;
+}
+.bio_desktop {
+  display: block;
+  grid-area: bio;
+  font-size: 1.2em;
+  width: 90%;
+  align-self: center;
+  line-height: 1.5em;
+  padding-left: 40px;
+  padding-right: 20px;
+}
+
+
+.grid-container{
+  margin: 0 auto;
+  grid-template-columns : auto 40% 40% auto;
+  grid-template-rows: 125px 125px 400px;
+  grid-template-areas: 
+  ". subH . ."
+  ". para1 . ."
+  ". bio img ."
+}
+.brownbg {
+  height: 400px;
+}
+.behind-grid {
+  grid-template-rows: 250px 400px;
+  top: 650px;
+  margin-top: -20em;
+}
+.item1 {
+  justify-self: start;
+  padding-left: 40px;
+  font-size:8em;
+  padding-top: 0;
+}
+.item2 {
+  display: block;
+  padding-right: 0;
+  text-align: start;
+  padding-left: 40px;
+}
+.item3 img{
+  width: 100%;
+  max-height: 700px;
+}
+
+.skills img {
+  width: 7em;
+  height: 7em;
+}
+.skills p {
+  font-size: 2.5em;
+  padding-top: 0.7em;
+}
+
+  }

@@ -1,0 +1,20 @@
+@font-face {
+    font-family: Didot;
+    src: url(font/DidotLH-Roman.otf) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Quicksand;
+    src: url(font/Quicksand-Regular.otf) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Quicksand;
+    src: url(font/Quicksand-Bold.otf) format('woff2');
+    font-weight: bold;
+    font-style: bold;
+}
