@@ -31,8 +31,7 @@
 .subtitle hr{
     width: 3.2em;
     border: 3px solid #FBEDE8;
-    margin: 0.4em auto;
-
+    margin: 0.4em auto 0 auto;
 }
 
 .wrapContainer {
@@ -313,22 +312,22 @@
   width: 100%;
   position: absolute;
   left: 50%;
-  top:-90%;
-  transform: translateY(-50%);
+  /* top:-90%; */
+  transform: ;
   animation: rotation 20s infinite;
 }
 
 @keyframes rotation {
-  0% { transform: rotate(-0deg);}
-  18.2% { transform: rotate(0deg);}
-  20.5% { transform: rotate(-72deg);}
-  38.6% { transform: rotate(-72deg);}
-  40.9% { transform: rotate(-144deg);}
-  59.1% { transform: rotate(-144deg);}
-  61.4% { transform: rotate(-216deg);}
-  79.5% { transform: rotate(-216deg);}
-  81.8% { transform: rotate(-288deg);}
-  100% { transform: rotate(-288deg);}
+  0% { transform: translateY(-50%) rotate(-0deg);}
+  18.2% { transform: translateY(-50%) rotate(0deg);}
+  20.5% { transform: translateY(-50%) rotate(-72deg);}
+  38.6% { transform: translateY(-50%) rotate(-72deg);}
+  40.9% { transform: translateY(-50%) rotate(-144deg);}
+  59.1% { transform: translateY(-50%) rotate(-144deg);}
+  61.4% { transform: translateY(-50%) rotate(-216deg);}
+  79.5% { transform: translateY(-50%) rotate(-216deg);}
+  81.8% { transform: translateY(-50%) rotate(-288deg);}
+  100% { transform: translateY(-50%) rotate(-288deg);}
 }
 
 .bio_long {

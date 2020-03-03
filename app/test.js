@@ -20,9 +20,9 @@ const speakers = document.getElementById('speakers')
 
 const playSounds = false;
 
-soundButtons.forEach(button => {
-    const sound = button.dataset.sound;
-    button.addEventListener('click', () => {
+soundButtons.forEach(dog => {
+    const sound = dog.dataset.sound;
+    dog.addEventListener('click', () => {
         speakers.src=`sounds/${sound}.mp3`;
         if (playSounds === true) speakers.play();        speakers.play();
     })    
