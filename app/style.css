@@ -1,22 +1,18 @@
-:root {
-    --darkblue: #04233F;
-    --lightblue: #50C8E9;
-    --pink: #D9487D;
-    --orange: #F29979;
-    --yellow : #F2D680;
-
-    --primary-light: var
-    --primary-:
-    --primary-dark:
-}
-
 * {
     box-sizing: border-box;
     margin: 0;
     font-family: didot;
+    font-size: 100%;
+}
+
+html{
+  overflow-x: hidden;
 }
 
 /* ----HamburgerIcon---- */
+nav {
+  z-index: 10;
+}
 .nav-links {
     position: absolute;
     border-bottom-right-radius: 50px;
@@ -28,14 +24,13 @@
     width: 14em;
     transform: translateX(-100%);
     transition: transform 0.5s;
-    z-index: 0;
+    z-index: 5;
   }
   .nav-links li {
     margin-left: 2.6em;
     padding-top: 2em;
     color: #504844;
     font-family: 'Quicksand';
-  
     }
   .nav-links a {
     text-decoration: none;
@@ -63,6 +58,51 @@
       position: absolute;
       color: #9B948C
     }
+
+    .ftrcontainer {
+      margin-top: 3em;
+      width: 100%;
+      position: relative;
+      clear: both;
+    }
+    
+    .ftr-img {
+      width: 100%;
+    }
+    
+    .icon {
+      position: absolute;
+      top: 50%;
+      left: 25%;
+      transform: translate(-50%, -50%);
+    }
+    
+    .icon2 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    
+    .icon3 {
+      position: absolute;
+      top: 50%;
+      left: 75%;
+      transform: translate(-50%, -50%);
+    }
+    
+    .ftr-centered {
+      position: absolute;
+      top: 90%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      font-size: 1em;
+      font-family: asap;
+      color: #1E1C59;
+      text-align: center;
+    }
+  
   
 @media (min-width: 37.5em) {
     .burger { 
@@ -98,5 +138,25 @@
     }
     .nav-links li {
       padding: 0;
+    }
+    .icon {
+      position: absolute;
+      top: 50%;
+      left: 43%;
+      transform: translate(-50%, -50%);
+    }
+    
+    .icon2 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    
+    .icon3 {
+      position: absolute;
+      top: 50%;
+      left: 57%;
+      transform: translate(-50%, -50%);
     }
 }

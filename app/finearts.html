@@ -8,45 +8,276 @@
     <title>Document</title>
 </head>
 <body>
-    <nav>
-        <div class="burger">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-        </div>
-        
-        <ul class="nav-links">
-            <a href="index.html"><li>Home</li></a>
-            <a href="finearts.html"><li>Portfolio</li></a>
-            <a href=""><li>Contact</li></a>
-        </ul> 
-    </nav>
 
-    <div class="sub-nav">
-        <div>
-            <p>FINE ARTS</p>
-            <div class="clipped">
-                <img src="image/bigtn_1.png" alt="Fine Arts">
-            </div>
-        </div>
-        <div>
-            <p>GRAPHIC DESIGN</p>
-            <img src="image/bigtn_2.png" alt="Graphic Design">
-        </div>
-        <div>
-            <p>UI/UX</p>
-            <img src="image/bigtn_3.png" alt="UI/UX">
-        </div>
+<nav>
+    <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
     </div>
-    _______________
+    
+    <ul class="nav-links">
+        <a href="index.html"><li>Home</li></a>
+        <a href="finearts.html"><li>Portfolio</li></a>
+        <a href="contact.html"><li>Contact</li></a>
+    </ul> 
+</nav>
 
-    <main>
-        <button class="soundtrack" data-sound="star">Sound</button>
-        <button class="soundtrack" data-sound="sound1">Sound</button>
-        <button id="btn-stop-sounds">S T O P</button>
-    </main>
-    <audio id="speakers"></audio>
 
-    <script src="test.js"></script>
+
+<!-- ----------PORTFOLIO PAGE---------- -->
+<div class="maintitle">
+    <h1>Portfolio</h1>
+</div>
+
+<div class="subnav">
+    
+    <a href="finearts.html"><div class="art">
+        <p class="center" id="fa">FINE ARTS</p>
+        <picture>
+            <source media="(min-width :62.5em)" srcset="image/dlarge_tn1.png">  
+            <source media="(min-width :37.5em)" srcset="image/ipadbigtn_1.png">
+            <img src="image/bigtn_1.png" alt="Graphic Design">  
+        </picture>   
+    </div></a>
+    
+    <a href="graphicdesign.html"><div class="art">
+        <p class="center" id="gd">GRAPHIC DESIGN</p>
+        <picture>
+            <source media="(min-width :62.5em)" srcset="image/dsmall_tn2.png">  
+            <source media="(min-width :37.5em)" srcset="image/ipadsmalltn_2.png">
+            <img src="image/tn_2.png" alt="Graphic Design">  
+        </picture>
+    </div></a>
+
+    <a href="uiux.html"><div class="art">
+        <p class="center" id="uiux">UI/UX</p>
+        <picture>
+            <source media="(min-width :62.5em)" srcset="image/dsmall_tn3.png">
+            <source media="(min-width :37.5em)" srcset="image/ipadsmalltn_3.png">
+            <img src="image/tn_3.png" alt="UI/UX">  
+        </picture>
+    </div></a>
+
+</div>
+
+<hr>
+
+<!-- ------------------------- -->
+
+
+
+<div class="aslevel">
+
+  <div class="grid"> 
+    <div class="title notspecial" hidden>
+      <h1>Metamorphosis</h1>
+    </div>
+
+    <div class="right">
+      <div class="main">
+    
+        <div class="mainimage">
+    
+          <div id="bigcollage">
+            <picture class="portrait" hidden>
+              <source media="(min-width :62.5em)" srcset="image/finearts/butterflycollage_large.jpg">  
+              <source media="(min-width :37.5em)" srcset="image/finearts/butterflycollage_medium.jpg">
+              <img src="image/finearts/butterflycollage_small.jpg" alt="Graphic Design">  
+            </picture>
+          </div>
+          <div id="bigmetamorphosis">
+            <picture class="portrait" hidden>
+              <source media="(min-width :62.5em)" srcset="image/finearts/metamorphosis_large.jpg">  
+              <source media="(min-width :37.5em)" srcset="image/finearts/metamorphosis_medium.jpg">
+              <img src="image/finearts/metamorphosis_small.jpg" alt="Graphic Design">  
+            </picture>
+          </div>
+          <div id="bigbubble">
+            <picture class="portrait" hidden>
+              <source media="(min-width :62.5em)" srcset="image/finearts/bubbleboy_large.jpg">  
+              <source media="(min-width :37.5em)" srcset="image/finearts/bubbleboy_medium.jpg">
+              <img src="image/finearts/bubbleboy_small.jpg" alt="Graphic Design">  
+            </picture>
+          </div>
+          <div id="bigshuvashis">
+            <picture class="portrait" hidden>
+              <source media="(min-width :62.5em)" srcset="image/finearts/shuvashis_large.jpg">  
+              <source media="(min-width :37.5em)" srcset="image/finearts/shuvashis_medium.jpg">
+              <img src="image/finearts/shuvashis_small.jpg" alt="Graphic Design">  
+            </picture>
+          </div>
+          <div id="bigcontour">
+            <picture class="portrait" hidden>
+              <source media="(min-width :62.5em)" srcset="image/finearts/contour_large.jpg">  
+              <source media="(min-width :37.5em)" srcset="image/finearts/contour_medium.jpg">
+              <img src="image/finearts/contour_small.jpg" alt="Graphic Design">  
+            </picture>
+          </div>
+        </div>
+    
+      </div>
+      
+      <div class="sub">
+    
+        <div class="subimage" id="collage">
+          <img src="image/finearts/butterflycollage_square.jpg" alt="">
+        </div>
+        <div class="subimage" id="metamorphosis">
+          <img src="image/finearts/metamorphosis_square.jpg" alt="">
+        </div >
+        <div class="subimage" id="bubble">
+          <img src="image/finearts/bubbleboy_square.jpg" alt="">
+        </div>
+        <div class="subimage" id="shuvashis">
+          <img src="image/finearts/shuvashis_square.jpg" alt="">
+        </div >
+        <div class="subimage" id="contour">
+          <img src="image/finearts/contour_square.jpg" alt="">
+        </div>
+    
+      </div>
+    
+    </div>
+
+    <div class="left" >
+      <div class="title special" hidden>
+        <h1>Metamorphosis</h1>
+      </div>
+      <div class="workdesc">
+        <p>For my AS Level Coursework, my theme is "Metamorphosis" where I explored the transition from teenagehood to adulthood. This theme is important to me as I was a teenage during this time thinking about college admissions and making big and important decisions for my future. Facing the reality and hardship of becoming an adulthood, carrying bigger responsibilities and supposedly becoming less free is difficult, but this is a transition all human being must undergo to truly start the path of independance and living life the way one wants. This coursework explores different symbolisms of this transition, the biggest being the butterfly that undergoes metamorphosis from a caterpillar to a beautiful grown butterfly. </p>
+      </div> 
+    </div>
+
+  </div>
+
+  
+
+</div>
+  
+  
+<div class="a2level">
+
+    
+  <div class="grid">
+
+    <div class="title notspecial" hidden>
+      <h1>Reminiscence</h1>
+    </div>
+
+    <div class="left">
+      <div class="main2">
+    
+        <div class="mainimage" id="a2level" >
+    
+          <div id="bigalicecard">
+            <picture class="portrait" hidden>
+              <source media="(min-width :62.5em)" srcset="image/finearts/alice_card_large.png">  
+              <source media="(min-width :37.5em)" srcset="image/finearts/alice_card_medium.png">
+              <img src="image/finearts/alice_card_small.png" alt="Graphic Design">  
+            </picture>
+          </div>
+          <div id="bigalicepers">
+            <picture class="portrait" hidden>
+              <source media="(min-width :62.5em)" srcset="image/finearts/alice_perspective_large.jpg">  
+              <source media="(min-width :37.5em)" srcset="image/finearts/alice_perspective_medium.jpg">
+              <img src="image/finearts/alice_perspective_small.jpg" alt="Graphic Design">  
+            </picture>
+          </div>
+          <div id="bigchess">
+            <picture class="portrait" hidden>
+              <source media="(min-width :62.5em)" srcset="image/finearts/chess_large.jpg">  
+              <source media="(min-width :37.5em)" srcset="image/finearts/chess_medium.jpg">
+              <img src="image/finearts/chess_small.jpg" alt="Graphic Design">  
+            </picture>
+          </div>
+          <div id="bigpatan">
+            <picture class="portrait" hidden>
+              <source media="(min-width :62.5em)" srcset="image/finearts/patan_large.jpg">  
+              <source media="(min-width :37.5em)" srcset="image/finearts/patan_medium.jpg">
+              <img src="image/finearts/patan_small.jpg" alt="Graphic Design">  
+            </picture>
+          </div>
+          <div id="bigstuck">
+            <picture class="portrait" hidden>
+              <source media="(min-width :62.5em)" srcset="image/finearts/stuck_large.jpg">  
+              <source media="(min-width :37.5em)" srcset="image/finearts/stuck_medium.jpg">
+              <img src="image/finearts/stuck_small.jpg" alt="Graphic Design">  
+            </picture>
+          </div>
+          <div id="bigtoy">
+            <picture class="portrait" hidden>
+              <source media="(min-width :62.5em)" srcset="image/finearts/toy_large.jpg">  
+              <source media="(min-width :37.5em)" srcset="image/finearts/toy_medium.jpg">
+              <img src="image/finearts/toy_small.jpg" alt="Graphic Design">  
+            </picture>
+          </div>
+    
+        </div>
+    
+      </div>
+    
+  
+      <div class="sub">
+    
+        <div class="subimage" id="alicecard">
+          <img src="image/finearts/alice_card_square.png" alt="">
+        </div>
+        <div class="subimage" id="alicepers">
+          <img src="image/finearts/alice_perspective_square.jpg" alt="">
+        </div >
+        <div class="subimage" id="chess">
+          <img src="image/finearts/chess_square.jpg" alt="">
+        </div>
+        <div class="subimage" id="patan">
+          <img src="image/finearts/patan_square.jpg" alt="">
+        </div >
+        <div class="subimage" id="stuck">
+          <img src="image/finearts/stuck_square.jpg" alt="">
+        </div>
+        <div class="subimage" id="toy">
+          <img src="image/finearts/toy_square.jpg" alt="">
+        </div>
+    
+      </div>
+    </div>
+
+    <div class="workdesc right">
+      <div class="title special" hidden>
+        <h1>Reminiscence</h1>
+    </div>
+      <p>For my A2 Level coursework, the theme "Reminiscence" is essentially a sequel to the previous theme "Metamorphosis" where one in adulthood reminesence the days of their childhood, evoking a strong sense of nostalgia. My main subject matter is "Alice" from Alice in Wonderland because she is a character I loved as a child, but as I research the concept of "Wonderland" and the role Alice play in this world, I began to learn that the whole story is about Alice searching and understanding herself as she is an imaginative child filled with curiosity and creativity, a skill a child tends to be better at compared to adults. For me, looking back at my childhood is a way to remind that even I am adult now and have sacrificed a lot of my desires to fit myself into the current society, I can still dream and imagine and hope.</p>
+    </div>
+
+  </div>
+</div>
+  
+<div class="ftrcontainer">
+  <picture>
+    <source media="(min-width :62.5em)" srcset="image/footer_large.png">  
+    <source media="(min-width :37.5em)" srcset="image/footer_medium.png">
+    <img src="image/footer_small.png" alt="Graphic Design">  
+  </picture>
+      <div class="icon">
+          <a href="https://www.linkedin.com/in/dolma-yangchen-s-207563136/">
+              <img src="image/linkedin.png" alt="LinkedIn">
+          </a>
+      </div>
+      <div class="icon2">
+          <a href="https://www.instagram.com/dolma565/?hl=en">
+              <img src="image/insta.png" alt="Instagram">
+          </a> 
+      </div>
+      <div class="icon3">
+          <a href="https://dribbble.com/dubby2000">
+              <img src="image/dribbble.png" alt="Dribbble">
+          </a>
+      </div>
+      <div class="ftr-centered"><p>&copy 2020 | Dolma Yangchen Sherpa</p></div>
+</div>
+  
+  
+    <script src="fineart.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>

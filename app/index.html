@@ -4,25 +4,145 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Homepage</title>
     <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="font.css">
+    <title>Homepage</title>
 </head>
-
 <body>
+    <div class="bigwheel">
+        <div class="full-big-circle">
+            <img src="image/desktop_wheell-02.png" alt="wheel of artworks">
+        </div>
+    </div>
+    
     <nav>
         <div class="burger">
             <div class="line1"></div>
             <div class="line2"></div>
             <div class="line3"></div>
         </div>
+
         <ul class="nav-links">
             <a href="index.html"><li>Home</li></a>
             <a href="finearts.html"><li>Portfolio</li></a>
-            <a href=""><li>Contact</li></a>
-        </ul>
+            <a href="contact.html"><li>Contact</li></a>
+        </ul> 
     </nav>
 
-<script src="test.js"></script>
+
+
+    <div class="title">
+        <p><b>Hello, <br> I'm Dolma.</b></p>
+    </div>
+    
+    <div class="subtitle">
+        <p><b>UI/UX/Graphic Designer</b></p>
+        <hr>
+    </div>
+
+    <div class="wrapContainer">
+        <div class="full-circle">
+            <img src="image/wheel_bordered-01.png" alt="wheel of artworks" id="clip-half">
+        </div>
+    </div> 
+    
+
+    <!-- --- BIOGRAPHY SECTION --- -->
+
+    <div class="behind-grid">
+        <div class="brownbg"></div>
+    </div>
+    <div class="grid-container"> 
+        <div class="item1"><p>T'is I.</p></div>
+        <div class="item2"><p>A student studying <i>Interactive Digital Media</i> in Drexel University, USA.</p></div>
+        <div class="item3"><img src="image/headshot.png" alt="headshot"></div>
+        <div class="bio_desktop">
+            <p>I’ve been pursuing arts ever since 3rd Grade in my Traditional Chinese painting class, and since then, who would have thought that I would end up here in the digital realm of arts and experiences. My journey with working with UI/UX Design and Research has been an exciting one filled with discovering new perspective of the digital world, the human brain, how we experience and interact with something - and it has never stopped. </p>
+        </div>
+    </div>
+    
+
+
+    <div class="bio_long">
+        <p>I’ve been pursuing arts ever since 3rd Grade in my Traditional Chinese painting class, and since then, who would have thought that I would end up here in the digital realm of arts and experiences. My journey with working with UI/UX Design and Research has been an exciting one filled with discovering new perspective of the digital world, the human brain, how we experience and interact with something - and it has never stopped. </p>
+    </div>
+
+    <!-- --- SOFTWARE EXPERTISE SECTION --- -->
+
+    <div class="skills">
+        <p>Software Expertise</p>
+        <div class="logos">
+            <img src="image/photoshop_logo.svg" alt="photoshop">
+            <img src="image/illustrator_logo.svg" alt="illustrator">
+            <img src="image/indesign_logo.svg" alt="indesign">
+            <img src="image/sketch_logo.svg" alt="sketch">
+            <img src="image/xd_logo.svg" alt="xd">
+            <img src="image/figma_logo.svg" alt="figma">
+        </div>
+    </div>
+
+    <!-- --- ART WORK SECTION --- -->
+
+    <div class="work">
+        <p>W O R K</p>
+    </div>
+
+    <div class="workbox">
+        <a href="finearts.html"><div class="art">
+            <p class="center" id="fa">FINE ARTS</p>
+            <picture>
+                <source media="(min-width :62.5em)" srcset="image/largetn_1.png"/>  
+                <source media="(min-width :37.5em)" srcset="image/tn_1.png"/>
+                <img src="image/tn_1.png" alt="Fine Arts"/>  
+            </picture> 
+        </div></a>
+
+        <a href="graphicdesign.html"><div class="art">
+            <p class="center" id="gd">GRAPHIC DESIGN</p>
+            <picture>
+                <source media="(min-width :62.5em)" srcset="image/largetn_2.png">  
+                <source media="(min-width :37.5em)" srcset="image/tn_2.png">
+                <img src="image/tn_2.png" alt="Graphic Design">  
+            </picture>
+        </div></a>
+
+        <a href="uiux.html"><div class="art">
+            <p class="center" id="uiux">UI/UX</p>
+            <picture>
+                <source media="(min-width :62.5em)" srcset="image/largetn_3.png">
+                <source media="(min-width :37.5em)" srcset="image/tn_3.png">
+                <img src="image/tn_3.png" alt="UI/UX">  
+            </picture>
+        </div></a>
+    </div>
+
+    <div class="ftrcontainer">
+        <picture>
+          <source media="(min-width :62.5em)" srcset="image/footer_large.png">  
+          <source media="(min-width :37.5em)" srcset="image/footer_medium.png">
+          <img src="image/footer_small.png" alt="Graphic Design">  
+        </picture>
+            <div class="icon">
+                <a href="https://www.linkedin.com/in/dolma-yangchen-s-207563136/">
+                    <img src="image/linkedin.png" alt="LinkedIn">
+                </a>
+            </div>
+            <div class="icon2">
+                <a href="https://www.instagram.com/dolma565/?hl=en">
+                    <img src="image/insta.png" alt="Instagram">
+                </a> 
+            </div>
+            <div class="icon3">
+                <a href="https://dribbble.com/dubby2000">
+                    <img src="image/dribbble.png" alt="Dribbble">
+                </a>
+            </div>
+            <div class="ftr-centered"><p>&copy 2020 | Dolma Yangchen Sherpa</p></div>
+      </div>
+
+    
+    <script src="main.js"></script>
 </body>
 </html>
